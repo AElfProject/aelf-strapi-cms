@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "production_nodes",
+  "info": {
+    "name": "ProductionNodes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "open": {
+      "type": "boolean"
+    },
+    "isStart": {
+      "type": "boolean"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "website": {
+      "type": "string"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "weight": {
+      "type": "integer"
+    }
+  }
+}

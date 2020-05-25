@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hot_news",
+  "info": {
+    "name": "hotNews"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "open": {
+      "type": "boolean"
+    },
+    "time": {
+      "type": "date"
+    }
+  }
+}

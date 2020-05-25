@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/swipers",
+      "handler": "swiper.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/swipers/count",
+      "handler": "swiper.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/swipers/:id",
+      "handler": "swiper.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/swipers",
+      "handler": "swiper.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/swipers/:id",
+      "handler": "swiper.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/swipers/:id",
+      "handler": "swiper.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

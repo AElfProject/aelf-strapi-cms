@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dev_cases",
+  "info": {
+    "name": "devCase"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "open": {
+      "type": "boolean"
+    }
+  }
+}
