@@ -49,6 +49,8 @@ https://www.baidu.com 这种, 不能缺少https://
 
 `http://localhost:1337/swipers?_limit=3&open=true&type=main&open=true&lang=zh&_sort=id%3ADESC`
 
+目前只有rightImg生效
+
 | 字段 | 字段类型 |
 | --- | --- |
 | leftImg | 媒体文件 |
@@ -88,6 +90,8 @@ https://www.baidu.com 这种, 不能缺少https://
 ## 4.开发案例
 
 `http://localhost:1337/dev-cases?_limit=20&_sort=id%3ADESC&lang=zh&open=true`
+
+图片是 400 * 200
 
 | 字段 | 字段类型 |
 | --- | --- |

@@ -7,6 +7,7 @@ A quick description of your strapi application
 ### Dev
 
 ```bash
+npm run build
 npm run start
 # npm run develop
 ```
@@ -16,5 +17,6 @@ npm run start
 Install pm2
 
 ```bash
+npm run build
 npm run pm2
 ```
