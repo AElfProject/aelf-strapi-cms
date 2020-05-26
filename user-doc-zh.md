@@ -50,6 +50,7 @@ https://www.baidu.com 这种, 不能缺少https://
 `http://localhost:1337/swipers?_limit=3&open=true&type=main&open=true&lang=zh&_sort=id%3ADESC`
 
 目前只有rightImg生效
+图片高度需要大于 600，图片内容上下居中
 
 | 字段 | 字段类型 |
 | --- | --- |
@@ -65,6 +66,8 @@ https://www.baidu.com 这种, 不能缺少https://
 ### 2.2主网启动委员会成员
 
 `http://localhost:1337/production-nodes?_limit=30&isStart=true&open=true&lang=zh&_sort=weight%3ADESC`
+
+图片使用长款的 1：1
 
 | 字段 | 字段类型 |
 | --- | --- |
@@ -101,6 +104,22 @@ https://www.baidu.com 这种, 不能缺少https://
 | lang | 文本(较长文字) |
 | img | 媒体文件（单一） |
 | open | 布尔类型（是否展示） |
+
+## 5.各种文档链接
+
+`http://localhost:1337/papers?_limit=20&open=true&type=economic`
+
+主要放白皮书和经济系统白皮书。
+如果其它语言没有，会使用 English的版本来填充
+
+| 字段 | 字段类型 |
+| --- | --- |
+| open | 布尔类型 |
+| name | 文本 |
+| desc | 文本(较长的文本) |
+| url | 文本 |
+| type | 文本(economic / whitepaper) |
+| lang | 文本 |
 
 ## 复用
 
