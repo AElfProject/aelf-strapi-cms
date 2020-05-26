@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "papers",
+  "info": {
+    "name": "Papers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "open": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    }
+  }
+}
