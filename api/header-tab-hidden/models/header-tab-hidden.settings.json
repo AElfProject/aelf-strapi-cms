@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "header_tab_hiddens",
+  "info": {
+    "name": "HeaderTabHidden"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "tabToHidden": {
+      "type": "string"
+    },
+    "open": {
+      "type": "boolean"
+    }
+  }
+}
