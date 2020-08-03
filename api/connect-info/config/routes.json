@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/connect-infos",
+      "handler": "connect-info.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/connect-infos/count",
+      "handler": "connect-info.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/connect-infos/:id",
+      "handler": "connect-info.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/connect-infos",
+      "handler": "connect-info.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/connect-infos/:id",
+      "handler": "connect-info.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/connect-infos/:id",
+      "handler": "connect-info.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
