@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "connect_infos",
+  "info": {
+    "name": "connectInfo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "telegram": {
+      "type": "string"
+    },
+    "qq": {
+      "type": "string"
+    },
+    "wechat": {
+      "type": "string"
+    },
+    "open": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}
