@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aelf-news",
+      "handler": "aelf-news.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aelf-news/count",
+      "handler": "aelf-news.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aelf-news/:id",
+      "handler": "aelf-news.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/aelf-news",
+      "handler": "aelf-news.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aelf-news/:id",
+      "handler": "aelf-news.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aelf-news/:id",
+      "handler": "aelf-news.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

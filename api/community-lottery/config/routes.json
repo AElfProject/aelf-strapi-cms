@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/community-lotteries",
+      "handler": "community-lottery.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/community-lotteries/count",
+      "handler": "community-lottery.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/community-lotteries/:id",
+      "handler": "community-lottery.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/community-lotteries",
+      "handler": "community-lottery.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/community-lotteries/:id",
+      "handler": "community-lottery.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/community-lotteries/:id",
+      "handler": "community-lottery.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

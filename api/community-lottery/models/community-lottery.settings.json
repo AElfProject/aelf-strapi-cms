@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "community_lotteries",
+  "info": {
+    "name": "communityLottery"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "prizeList": {
+      "type": "json"
+    },
+    "grandPrize": {
+      "type": "boolean"
+    },
+    "grandPrizeAmount": {
+      "type": "biginteger"
+    },
+    "start": {
+      "type": "biginteger"
+    },
+    "next": {
+      "type": "biginteger"
+    }
+  }
+}
