@@ -23,6 +23,12 @@
     },
     "next": {
       "type": "biginteger"
+    },
+    "conclusion": {
+      "type": "string"
+    },
+    "prolog": {
+      "type": "string"
     }
   }
 }
