@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "other_links",
+  "info": {
+    "name": "otherLinks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "open": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "wallet",
+        "swap",
+        "tasks",
+        "lottery"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

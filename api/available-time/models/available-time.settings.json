@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "available_times",
+  "info": {
+    "name": "availableTime"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "open": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "mortgage",
+        "swapTest",
+        "redeem"
+      ]
+    },
+    "start": {
+      "type": "datetime"
+    },
+    "end": {
+      "type": "datetime"
+    }
+  }
+}
