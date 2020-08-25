@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/other-links",
-      "handler": "other-links.find",
+      "path": "/lottery-referendums",
+      "handler": "lottery-referendum.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/other-links/count",
-      "handler": "other-links.count",
+      "path": "/lottery-referendums/count",
+      "handler": "lottery-referendum.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/other-links/:id",
-      "handler": "other-links.findOne",
+      "path": "/lottery-referendums/:id",
+      "handler": "lottery-referendum.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/other-links",
-      "handler": "other-links.create",
+      "path": "/lottery-referendums",
+      "handler": "lottery-referendum.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/other-links/:id",
-      "handler": "other-links.update",
+      "path": "/lottery-referendums/:id",
+      "handler": "lottery-referendum.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/other-links/:id",
-      "handler": "other-links.delete",
+      "path": "/lottery-referendums/:id",
+      "handler": "lottery-referendum.delete",
       "config": {
         "policies": []
       }

@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/other-links": {
+    "/lottery-referendums": {
       "get": {
         "deprecated": false,
-        "description": "Find all the other-links's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve other-links document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Other-links"
+          "Lottery-referendum"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new other-links record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve other-links document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Other-links"
+          "Lottery-referendum"
         ],
         "requestBody": {
           "description": "",
@@ -252,20 +252,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOther-links"
+                "$ref": "#/components/schemas/NewLottery-referendum"
               }
             }
           }
         }
       }
     },
-    "/other-links/count": {
+    "/lottery-referendums/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of other-links documents",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve other-links document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -311,18 +311,18 @@
         },
         "summary": "",
         "tags": [
-          "Other-links"
+          "Lottery-referendum"
         ],
         "parameters": []
       }
     },
-    "/other-links/{id}": {
+    "/lottery-referendums/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one other-links record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve other-links document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Other-links"
+          "Lottery-referendum"
         ],
         "parameters": [
           {
@@ -385,10 +385,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single other-links record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve other-links document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Other-links"
+          "Lottery-referendum"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOther-links"
+                "$ref": "#/components/schemas/NewLottery-referendum"
               }
             }
           }
@@ -462,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single other-links record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single other-links based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Other-links"
+          "Lottery-referendum"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Other-links": {
+      "Lottery-referendum": {
         "required": [
           "id"
         ],
@@ -535,45 +535,33 @@
           "id": {
             "type": "string"
           },
-          "open": {
+          "isShow": {
             "type": "boolean"
           },
-          "type": {
-            "type": "string",
-            "enum": [
-              "wallet",
-              "swap",
-              "tasks",
-              "lottery"
-            ]
+          "start": {
+            "type": "datetime"
           },
-          "name": {
-            "type": "string"
+          "end": {
+            "type": "datetime"
           },
-          "link": {
-            "type": "string"
+          "communityLink": {
+            "type": "object"
           }
         }
       },
-      "NewOther-links": {
+      "NewLottery-referendum": {
         "properties": {
-          "open": {
+          "isShow": {
             "type": "boolean"
           },
-          "type": {
-            "type": "string",
-            "enum": [
-              "wallet",
-              "swap",
-              "tasks",
-              "lottery"
-            ]
+          "start": {
+            "type": "datetime"
           },
-          "name": {
-            "type": "string"
+          "end": {
+            "type": "datetime"
           },
-          "link": {
-            "type": "string"
+          "communityLink": {
+            "type": "object"
           }
         }
       }
