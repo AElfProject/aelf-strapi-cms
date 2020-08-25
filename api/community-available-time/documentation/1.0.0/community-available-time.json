@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/available-times": {
+    "/community-available-times": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Available-time"
+          "Community-available-time"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Available-time"
+          "Community-available-time"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAvailable-time"
+                "$ref": "#/components/schemas/NewCommunity-available-time"
               }
             }
           }
         }
       }
     },
-    "/available-times/count": {
+    "/community-available-times/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Available-time"
+          "Community-available-time"
         ],
         "parameters": []
       }
     },
-    "/available-times/{id}": {
+    "/community-available-times/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Available-time"
+          "Community-available-time"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Available-time"
+          "Community-available-time"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAvailable-time"
+                "$ref": "#/components/schemas/NewCommunity-available-time"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Available-time"
+          "Community-available-time"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Available-time": {
+      "Community-available-time": {
         "required": [
           "id"
         ],
@@ -535,8 +535,14 @@
           "id": {
             "type": "string"
           },
+          "start": {
+            "type": "datetime"
+          },
           "open": {
             "type": "boolean"
+          },
+          "end": {
+            "type": "datetime"
           },
           "type": {
             "type": "string",
@@ -545,19 +551,19 @@
               "swapTest",
               "redeem"
             ]
-          },
-          "start": {
-            "type": "datetime"
-          },
-          "end": {
-            "type": "datetime"
           }
         }
       },
-      "NewAvailable-time": {
+      "NewCommunity-available-time": {
         "properties": {
+          "start": {
+            "type": "datetime"
+          },
           "open": {
             "type": "boolean"
+          },
+          "end": {
+            "type": "datetime"
           },
           "type": {
             "type": "string",
@@ -566,12 +572,6 @@
               "swapTest",
               "redeem"
             ]
-          },
-          "start": {
-            "type": "datetime"
-          },
-          "end": {
-            "type": "datetime"
           }
         }
       }

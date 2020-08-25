@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `available-time` model.
+ * Lifecycle callbacks for the `community-lottery-referendum` model.
  */
 
 module.exports = {

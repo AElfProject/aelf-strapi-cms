@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/lottery-referendums": {
+    "/community-lottery-referendums": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Lottery-referendum"
+          "Community-lottery-referendum"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Lottery-referendum"
+          "Community-lottery-referendum"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewLottery-referendum"
+                "$ref": "#/components/schemas/NewCommunity-lottery-referendum"
               }
             }
           }
         }
       }
     },
-    "/lottery-referendums/count": {
+    "/community-lottery-referendums/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Lottery-referendum"
+          "Community-lottery-referendum"
         ],
         "parameters": []
       }
     },
-    "/lottery-referendums/{id}": {
+    "/community-lottery-referendums/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Lottery-referendum"
+          "Community-lottery-referendum"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Lottery-referendum"
+          "Community-lottery-referendum"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewLottery-referendum"
+                "$ref": "#/components/schemas/NewCommunity-lottery-referendum"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Lottery-referendum"
+          "Community-lottery-referendum"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Lottery-referendum": {
+      "Community-lottery-referendum": {
         "required": [
           "id"
         ],
@@ -549,7 +549,7 @@
           }
         }
       },
-      "NewLottery-referendum": {
+      "NewCommunity-lottery-referendum": {
         "properties": {
           "isShow": {
             "type": "boolean"
