@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/community-lottery-referendums",
+      "handler": "community-lottery-referendum.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/community-lottery-referendums/count",
+      "handler": "community-lottery-referendum.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/community-lottery-referendums/:id",
+      "handler": "community-lottery-referendum.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/community-lottery-referendums",
+      "handler": "community-lottery-referendum.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/community-lottery-referendums/:id",
+      "handler": "community-lottery-referendum.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/community-lottery-referendums/:id",
+      "handler": "community-lottery-referendum.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

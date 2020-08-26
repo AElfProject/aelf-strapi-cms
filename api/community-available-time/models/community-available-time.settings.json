@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "community_available_times",
+  "info": {
+    "name": "communityAvailableTime"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "start": {
+      "type": "datetime"
+    },
+    "open": {
+      "type": "boolean"
+    },
+    "end": {
+      "type": "datetime"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "mortgage",
+        "swapTest",
+        "redeem"
+      ]
+    }
+  }
+}

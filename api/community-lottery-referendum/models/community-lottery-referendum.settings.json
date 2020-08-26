@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "community_lottery_referendums",
+  "info": {
+    "name": "CommunityLotteryReferendum"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "isShow": {
+      "type": "boolean"
+    },
+    "start": {
+      "type": "datetime"
+    },
+    "end": {
+      "type": "datetime"
+    },
+    "communityLink": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/community-available-times",
+      "handler": "community-available-time.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/community-available-times/count",
+      "handler": "community-available-time.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/community-available-times/:id",
+      "handler": "community-available-time.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/community-available-times",
+      "handler": "community-available-time.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/community-available-times/:id",
+      "handler": "community-available-time.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/community-available-times/:id",
+      "handler": "community-available-time.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
