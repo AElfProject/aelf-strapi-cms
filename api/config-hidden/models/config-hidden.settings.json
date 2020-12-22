@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "config_hiddens",
+  "info": {
+    "name": "ConfigHidden"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "page": {
+      "type": "string"
+    },
+    "filed": {
+      "type": "string"
+    },
+    "hidden": {
+      "type": "boolean"
+    },
+    "lang": {
+      "type": "string"
+    }
+  }
+}
