@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mainnets",
+      "handler": "mainnet.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mainnets/count",
+      "handler": "mainnet.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mainnets/:id",
+      "handler": "mainnet.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mainnets",
+      "handler": "mainnet.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mainnets/:id",
+      "handler": "mainnet.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mainnets/:id",
+      "handler": "mainnet.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
