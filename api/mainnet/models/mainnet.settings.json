@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mainnets",
+  "info": {
+    "name": "Mainnet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "open": {
+      "type": "boolean"
+    },
+    "website": {
+      "type": "string"
+    },
+    "clickable": {
+      "type": "boolean"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "icon": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
