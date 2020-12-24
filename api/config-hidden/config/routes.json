@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/config-hiddens",
+      "handler": "config-hidden.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/config-hiddens/count",
+      "handler": "config-hidden.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/config-hiddens/:id",
+      "handler": "config-hidden.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/config-hiddens",
+      "handler": "config-hidden.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/config-hiddens/:id",
+      "handler": "config-hidden.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/config-hiddens/:id",
+      "handler": "config-hidden.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
