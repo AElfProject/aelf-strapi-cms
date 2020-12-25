@@ -626,6 +626,16 @@
               "home",
               "homepage"
             ]
+          },
+          "highLightNode": {
+            "type": "string",
+            "enum": [
+              "monitoring",
+              "swap",
+              "election",
+              "improvement",
+              "stabilization"
+            ]
           }
         }
       },
@@ -659,6 +669,16 @@
             "enum": [
               "home",
               "homepage"
+            ]
+          },
+          "highLightNode": {
+            "type": "string",
+            "enum": [
+              "monitoring",
+              "swap",
+              "election",
+              "improvement",
+              "stabilization"
             ]
           }
         }
