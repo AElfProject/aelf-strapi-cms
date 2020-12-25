@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mainnet-stages",
+      "handler": "mainnet-stage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mainnet-stages/count",
+      "handler": "mainnet-stage.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mainnet-stages/:id",
+      "handler": "mainnet-stage.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mainnet-stages",
+      "handler": "mainnet-stage.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mainnet-stages/:id",
+      "handler": "mainnet-stage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mainnet-stages/:id",
+      "handler": "mainnet-stage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
