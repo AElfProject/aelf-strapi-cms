@@ -23,7 +23,11 @@
       "enum": [
         "mortgage",
         "swapTest",
-        "redeem"
+        "redeem",
+        "dailyTask",
+        "lotteryRewardSharing",
+        "lotterySwitchCode",
+        "lotteryTakeAward"
       ]
     }
   }
