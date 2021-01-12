@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "community_lottery_sharings",
+  "info": {
+    "name": "CommunityLotterySharing"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "amount": {
+      "type": "integer"
+    },
+    "start": {
+      "type": "datetime"
+    },
+    "end": {
+      "type": "datetime"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/community-lottery-sharings",
+      "handler": "community-lottery-sharing.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/community-lottery-sharings/count",
+      "handler": "community-lottery-sharing.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/community-lottery-sharings/:id",
+      "handler": "community-lottery-sharing.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/community-lottery-sharings",
+      "handler": "community-lottery-sharing.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/community-lottery-sharings/:id",
+      "handler": "community-lottery-sharing.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/community-lottery-sharings/:id",
+      "handler": "community-lottery-sharing.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
