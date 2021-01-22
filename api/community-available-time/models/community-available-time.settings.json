@@ -27,7 +27,8 @@
         "dailyTask",
         "lotteryRewardSharing",
         "lotterySwitchCode",
-        "lotteryTakeAward"
+        "lotteryTakeAward",
+        "lotteryRewardSharingStaking"
       ]
     }
   }
