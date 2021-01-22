@@ -550,7 +550,8 @@
               "wallet",
               "swap",
               "tasks",
-              "lottery"
+              "lottery",
+              "severalTask"
             ]
           }
         }
@@ -572,7 +573,8 @@
               "wallet",
               "swap",
               "tasks",
-              "lottery"
+              "lottery",
+              "severalTask"
             ]
           }
         }

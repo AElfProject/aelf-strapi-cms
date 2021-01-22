@@ -553,7 +553,8 @@
               "dailyTask",
               "lotteryRewardSharing",
               "lotterySwitchCode",
-              "lotteryTakeAward"
+              "lotteryTakeAward",
+              "lotteryRewardSharingStaking"
             ]
           }
         }
@@ -578,7 +579,8 @@
               "dailyTask",
               "lotteryRewardSharing",
               "lotterySwitchCode",
-              "lotteryTakeAward"
+              "lotteryTakeAward",
+              "lotteryRewardSharingStaking"
             ]
           }
         }
