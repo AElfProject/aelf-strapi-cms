@@ -25,7 +25,8 @@
         "swap",
         "tasks",
         "lottery",
-        "severalTask"
+        "severalTask",
+        "walletIOSUrl"
       ]
     }
   }

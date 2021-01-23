@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/22/2021 5:45:12 PM"
+    "x-generation-date": "01/23/2021 1:09:42 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10650,7 +10650,8 @@
               "swap",
               "tasks",
               "lottery",
-              "severalTask"
+              "severalTask",
+              "walletIOSUrl"
             ]
           }
         }
@@ -10673,7 +10674,8 @@
               "swap",
               "tasks",
               "lottery",
-              "severalTask"
+              "severalTask",
+              "walletIOSUrl"
             ]
           }
         }
