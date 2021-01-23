@@ -551,7 +551,8 @@
               "swap",
               "tasks",
               "lottery",
-              "severalTask"
+              "severalTask",
+              "walletIOSUrl"
             ]
           }
         }
@@ -574,7 +575,8 @@
               "swap",
               "tasks",
               "lottery",
-              "severalTask"
+              "severalTask",
+              "walletIOSUrl"
             ]
           }
         }
