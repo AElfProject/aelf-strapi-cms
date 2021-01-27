@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/community-configs",
+      "handler": "community-config.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/community-configs/count",
+      "handler": "community-config.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/community-configs/:id",
+      "handler": "community-config.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/community-configs",
+      "handler": "community-config.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/community-configs/:id",
+      "handler": "community-config.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/community-configs/:id",
+      "handler": "community-config.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
