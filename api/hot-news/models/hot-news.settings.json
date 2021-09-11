@@ -32,7 +32,7 @@
       "type": "boolean"
     },
     "time": {
-      "type": "date",
+      "type": "datetime",
       "required": true
     },
     "description": {

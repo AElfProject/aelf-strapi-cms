@@ -612,7 +612,7 @@
             "type": "boolean"
           },
           "time": {
-            "type": "string"
+            "type": "datetime"
           },
           "description": {
             "type": "string"
@@ -645,7 +645,7 @@
             "type": "boolean"
           },
           "time": {
-            "type": "string"
+            "type": "datetime"
           },
           "description": {
             "type": "string"
