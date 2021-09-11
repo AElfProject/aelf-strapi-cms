@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "new_lists",
+  "info": {
+    "name": "newsList"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "newsItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "news-item.new",
+      "required": true
+    },
+    "local": {
+      "type": "enumeration",
+      "enum": [
+        "zh",
+        "en"
+      ],
+      "default": "en"
+    }
+  }
+}

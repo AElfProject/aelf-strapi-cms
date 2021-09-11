@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/hot-news": {
+    "/new-lists": {
       "get": {
         "deprecated": false,
-        "description": "Find all the hot-news's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve hot-news document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Hot-news"
+          "New-list"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new hot-news record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve hot-news document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Hot-news"
+          "New-list"
         ],
         "requestBody": {
           "description": "",
@@ -252,20 +252,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewHot-news"
+                "$ref": "#/components/schemas/NewNew-list"
               }
             }
           }
         }
       }
     },
-    "/hot-news/count": {
+    "/new-lists/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of hot-news documents",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve hot-news document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -311,18 +311,18 @@
         },
         "summary": "",
         "tags": [
-          "Hot-news"
+          "New-list"
         ],
         "parameters": []
       }
     },
-    "/hot-news/{id}": {
+    "/new-lists/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one hot-news record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve hot-news document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Hot-news"
+          "New-list"
         ],
         "parameters": [
           {
@@ -385,10 +385,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single hot-news record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve hot-news document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Hot-news"
+          "New-list"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewHot-news"
+                "$ref": "#/components/schemas/NewNew-list"
               }
             }
           }
@@ -462,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single hot-news record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single hot-news based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Hot-news"
+          "New-list"
         ],
         "parameters": [
           {
@@ -527,98 +527,117 @@
   },
   "components": {
     "schemas": {
-      "Hot-news": {
+      "New-list": {
         "required": [
           "id",
-          "img",
-          "link",
-          "title",
-          "time",
-          "description",
-          "lang"
+          "newsItem"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "img": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
+          "newsItem": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "title",
+                "description",
+                "img",
+                "Link",
+                "time",
+                "open"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "img": {
+                  "type": "array",
+                  "items": {
+                    "required": [
+                      "id",
+                      "name",
+                      "hash",
+                      "mime",
+                      "size",
+                      "url",
+                      "provider"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "alternativeText": {
+                        "type": "string"
+                      },
+                      "caption": {
+                        "type": "string"
+                      },
+                      "width": {
+                        "type": "integer"
+                      },
+                      "height": {
+                        "type": "integer"
+                      },
+                      "formats": {
+                        "type": "object"
+                      },
+                      "hash": {
+                        "type": "string"
+                      },
+                      "ext": {
+                        "type": "string"
+                      },
+                      "mime": {
+                        "type": "string"
+                      },
+                      "size": {
+                        "type": "number"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "previewUrl": {
+                        "type": "string"
+                      },
+                      "provider": {
+                        "type": "string"
+                      },
+                      "provider_metadata": {
+                        "type": "object"
+                      },
+                      "related": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "Link": {
+                  "type": "string"
+                },
+                "time": {
+                  "type": "string"
+                },
+                "open": {
+                  "type": "boolean"
+                }
               }
             }
           },
-          "link": {
-            "type": "string"
-          },
-          "title": {
-            "type": "string"
-          },
-          "open": {
-            "type": "boolean"
-          },
-          "time": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "lang": {
+          "local": {
             "type": "string",
+            "default": "en",
             "enum": [
               "zh",
               "en"
@@ -626,32 +645,113 @@
           }
         }
       },
-      "NewHot-news": {
+      "NewNew-list": {
         "required": [
-          "link",
-          "title",
-          "time",
-          "description",
-          "lang"
+          "newsItem"
         ],
         "properties": {
-          "link": {
-            "type": "string"
+          "newsItem": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "title",
+                "description",
+                "img",
+                "Link",
+                "time",
+                "open"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "img": {
+                  "type": "array",
+                  "items": {
+                    "required": [
+                      "id",
+                      "name",
+                      "hash",
+                      "mime",
+                      "size",
+                      "url",
+                      "provider"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "alternativeText": {
+                        "type": "string"
+                      },
+                      "caption": {
+                        "type": "string"
+                      },
+                      "width": {
+                        "type": "integer"
+                      },
+                      "height": {
+                        "type": "integer"
+                      },
+                      "formats": {
+                        "type": "object"
+                      },
+                      "hash": {
+                        "type": "string"
+                      },
+                      "ext": {
+                        "type": "string"
+                      },
+                      "mime": {
+                        "type": "string"
+                      },
+                      "size": {
+                        "type": "number"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "previewUrl": {
+                        "type": "string"
+                      },
+                      "provider": {
+                        "type": "string"
+                      },
+                      "provider_metadata": {
+                        "type": "object"
+                      },
+                      "related": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "Link": {
+                  "type": "string"
+                },
+                "time": {
+                  "type": "string"
+                },
+                "open": {
+                  "type": "boolean"
+                }
+              }
+            }
           },
-          "title": {
-            "type": "string"
-          },
-          "open": {
-            "type": "boolean"
-          },
-          "time": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "lang": {
+          "local": {
             "type": "string",
+            "default": "en",
             "enum": [
               "zh",
               "en"

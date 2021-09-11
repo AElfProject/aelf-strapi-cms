@@ -13,27 +13,39 @@
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "link": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "title": {
-      "type": "string"
-    },
-    "lang": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "open": {
       "type": "boolean"
     },
     "time": {
-      "type": "date"
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "lang": {
+      "type": "enumeration",
+      "enum": [
+        "zh",
+        "en"
+      ],
+      "required": true
     }
   }
 }
