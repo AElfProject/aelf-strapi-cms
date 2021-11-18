@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_menu_sub_menus",
+  "info": {
+    "name": "SubMenu",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "subTitle": {
+      "type": "string"
+    },
+    "menuList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.menu-item"
+    }
+  }
+}
