@@ -556,6 +556,12 @@
           },
           "end": {
             "type": "datetime"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       }

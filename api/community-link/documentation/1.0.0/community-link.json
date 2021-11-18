@@ -578,6 +578,12 @@
               "severalTask",
               "walletIOSUrl"
             ]
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       }
