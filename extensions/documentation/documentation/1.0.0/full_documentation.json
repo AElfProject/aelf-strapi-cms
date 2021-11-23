@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/16/2021 4:20:24 PM"
+    "x-generation-date": "11/23/2021 12:11:40 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -12096,84 +12096,7 @@
                   "type": "boolean",
                   "default": false
                 },
-                "url": {
-                  "type": "string"
-                },
-                "pageList": {
-                  "type": "object"
-                },
-                "subList": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "required": [
-                      "id"
-                    ],
-                    "properties": {
-                      "id": {
-                        "type": "string"
-                      },
-                      "subTitle": {
-                        "type": "string"
-                      },
-                      "menuList": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "required": [
-                            "id"
-                          ],
-                          "properties": {
-                            "id": {
-                              "type": "string"
-                            },
-                            "title": {
-                              "type": "string"
-                            },
-                            "description": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
-                            "page": {
-                              "type": "integer"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "NewAelf-menu": {
-        "properties": {
-          "local": {
-            "type": "string",
-            "enum": [
-              "zh",
-              "en"
-            ]
-          },
-          "list": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "mainTitle": {
-                  "type": "string"
-                },
-                "isUrl": {
+                "isActivity": {
                   "type": "boolean",
                   "default": false
                 },
@@ -12219,6 +12142,103 @@
                             },
                             "page": {
                               "type": "integer"
+                            },
+                            "activeTimeStart": {
+                              "type": "datetime"
+                            },
+                            "activeTimeEnd": {
+                              "type": "datetime"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "NewAelf-menu": {
+        "properties": {
+          "local": {
+            "type": "string",
+            "enum": [
+              "zh",
+              "en"
+            ]
+          },
+          "list": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "mainTitle": {
+                  "type": "string"
+                },
+                "isUrl": {
+                  "type": "boolean",
+                  "default": false
+                },
+                "isActivity": {
+                  "type": "boolean",
+                  "default": false
+                },
+                "url": {
+                  "type": "string"
+                },
+                "pageList": {
+                  "type": "object"
+                },
+                "subList": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "subTitle": {
+                        "type": "string"
+                      },
+                      "menuList": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "required": [
+                            "id"
+                          ],
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "title": {
+                              "type": "string"
+                            },
+                            "description": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "page": {
+                              "type": "integer"
+                            },
+                            "activeTimeStart": {
+                              "type": "datetime"
+                            },
+                            "activeTimeEnd": {
+                              "type": "datetime"
                             }
                           }
                         }

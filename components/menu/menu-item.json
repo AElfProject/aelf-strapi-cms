@@ -17,6 +17,12 @@
     },
     "page": {
       "type": "integer"
+    },
+    "activeTimeStart": {
+      "type": "datetime"
+    },
+    "activeTimeEnd": {
+      "type": "datetime"
     }
   }
 }
