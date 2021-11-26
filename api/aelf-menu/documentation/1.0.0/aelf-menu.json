@@ -529,7 +529,9 @@
     "schemas": {
       "Aelf-menu": {
         "required": [
-          "id"
+          "id",
+          "local",
+          "list"
         ],
         "properties": {
           "id": {
@@ -547,7 +549,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "mainTitle"
               ],
               "properties": {
                 "id": {
@@ -589,7 +592,11 @@
                         "items": {
                           "type": "object",
                           "required": [
-                            "id"
+                            "id",
+                            "title",
+                            "url",
+                            "activeTimeStart",
+                            "activeTimeEnd"
                           ],
                           "properties": {
                             "id": {
@@ -625,6 +632,10 @@
         }
       },
       "NewAelf-menu": {
+        "required": [
+          "local",
+          "list"
+        ],
         "properties": {
           "local": {
             "type": "string",
@@ -638,7 +649,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "mainTitle"
               ],
               "properties": {
                 "id": {
@@ -680,7 +692,11 @@
                         "items": {
                           "type": "object",
                           "required": [
-                            "id"
+                            "id",
+                            "title",
+                            "url",
+                            "activeTimeStart",
+                            "activeTimeEnd"
                           ],
                           "properties": {
                             "id": {
