@@ -594,9 +594,7 @@
                           "required": [
                             "id",
                             "title",
-                            "url",
-                            "activeTimeStart",
-                            "activeTimeEnd"
+                            "url"
                           ],
                           "properties": {
                             "id": {
@@ -694,9 +692,7 @@
                           "required": [
                             "id",
                             "title",
-                            "url",
-                            "activeTimeStart",
-                            "activeTimeEnd"
+                            "url"
                           ],
                           "properties": {
                             "id": {

@@ -22,11 +22,11 @@
     },
     "activeTimeStart": {
       "type": "datetime",
-      "required": true
+      "required": false
     },
     "activeTimeEnd": {
       "type": "datetime",
-      "required": true
+      "required": false
     }
   }
 }
