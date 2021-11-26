@@ -7,22 +7,26 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "type": "text"
     },
     "url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "page": {
       "type": "integer"
     },
     "activeTimeStart": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
     "activeTimeEnd": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     }
   }
 }

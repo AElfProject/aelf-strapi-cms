@@ -14,12 +14,14 @@
       "enum": [
         "zh",
         "en"
-      ]
+      ],
+      "required": true
     },
     "list": {
       "type": "component",
       "repeatable": true,
-      "component": "menu.main-menu"
+      "component": "menu.main-menu",
+      "required": true
     }
   }
 }
