@@ -4,11 +4,12 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "strapi develop",
+    "develop": " strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "pm2": "pm2 start npm --name aelf-strapi-cms -- run start"
+    "pm2": "pm2 start npm --name aelf-strapi-cms -- run start",
+    "pm2:test": "PORT=1338 pm2 start npm --name aelf-strapi-cms-test -- run start"
   },
   "devDependencies": {},
   "dependencies": {
