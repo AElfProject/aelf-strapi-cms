@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/chain-list-by-networks": {
+    "/cms/chain-list-by-networks": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -259,7 +259,7 @@
         }
       }
     },
-    "/chain-list-by-networks/count": {
+    "/cms/chain-list-by-networks/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -316,7 +316,7 @@
         "parameters": []
       }
     },
-    "/chain-list-by-networks/{id}": {
+    "/cms/chain-list-by-networks/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
