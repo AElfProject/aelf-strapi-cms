@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chain_list_by_networks",
+  "info": {
+    "name": "chainListByNetwork"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "netWorkType": {
+      "type": "enumeration",
+      "enum": [
+        "MAIN",
+        "TESTNET"
+      ],
+      "required": true
+    },
+    "chainItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "chain-item.chain-item"
+    }
+  }
+}

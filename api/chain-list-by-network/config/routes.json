@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/chain-list-by-networks",
+      "handler": "chain-list-by-network.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chain-list-by-networks/count",
+      "handler": "chain-list-by-network.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chain-list-by-networks/:id",
+      "handler": "chain-list-by-network.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/chain-list-by-networks",
+      "handler": "chain-list-by-network.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/chain-list-by-networks/:id",
+      "handler": "chain-list-by-network.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/chain-list-by-networks/:id",
+      "handler": "chain-list-by-network.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
