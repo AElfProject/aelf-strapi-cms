@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ecologys",
+      "handler": "ecologys.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ecologys/count",
+      "handler": "ecologys.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ecologys/:id",
+      "handler": "ecologys.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ecologys",
+      "handler": "ecologys.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ecologys/:id",
+      "handler": "ecologys.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ecologys/:id",
+      "handler": "ecologys.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

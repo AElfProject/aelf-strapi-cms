@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_ecology_tag_item_tag_items",
+  "info": {
+    "name": "TagItem",
+    "icon": "tag"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
