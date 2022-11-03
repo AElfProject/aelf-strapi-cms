@@ -1241,8 +1241,8 @@
 
 "@formatjs/intl-numberformat@^5.5.2":
   version "5.7.6"
-  resolved "https://registry.npmmirror.com/@formatjs/intl-numberformat/download/@formatjs/intl-numberformat-5.7.6.tgz#630206bb0acefd2d508ccf4f82367c6875cad611"
-  integrity "sha1-YwIGuwrO/S1QjM9PgjZ8aHXK1hE= sha512-ZlZfYtvbVHYZY5OG3RXizoCwxKxEKOrzEe2YOw9wbzoxF3PmFn0SAgojCFGLyNXkkR6xVxlylhbuOPf1dkIVNg=="
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.7.6.tgz#630206bb0acefd2d508ccf4f82367c6875cad611"
+  integrity sha512-ZlZfYtvbVHYZY5OG3RXizoCwxKxEKOrzEe2YOw9wbzoxF3PmFn0SAgojCFGLyNXkkR6xVxlylhbuOPf1dkIVNg==
   dependencies:
     "@formatjs/ecma402-abstract" "1.4.0"
     tslib "^2.0.1"
@@ -5062,11 +5062,11 @@ intl-format-cache@^4.2.24, intl-format-cache@^4.2.43:
   integrity "sha1-SE0xqYchYebAITk0myWaYimt43c= sha512-OEUYNA7D06agqPOYhbTkl0T8HA3QKSuwWh1HiClEnpd9vw7N+3XsQt5iZ0GUEchp5CW1fQk/tary+NsbF3yQ1Q=="
 
 intl-messageformat-parser@^5.0.0, intl-messageformat-parser@^5.2.1:
-  version "5.4.2"
-  resolved "https://registry.npmmirror.com/intl-messageformat-parser/download/intl-messageformat-parser-5.5.1.tgz#f09a692755813e6220081e3374df3fb1698bd0c6"
-  integrity "sha1-2LEGRYeYzNgeedjVLG+X86QSQ1Y= sha512-VHu6UWgWLJykaSeI1M2DpZMVRLuGCOV91i5I81xnJuAI0MKHP7ZJ3my5naOQkzG10ris3hBr+o5RElF1wQ5IXA=="
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.5.1.tgz#f09a692755813e6220081e3374df3fb1698bd0c6"
+  integrity sha512-TvB3LqF2VtP6yI6HXlRT5TxX98HKha6hCcrg9dwlPwNaedVNuQA9KgBdtWKgiyakyCTYHQ+KJeFEstNKfZr64w==
   dependencies:
-    "@formatjs/intl-numberformat" "^5.5.0"
+    "@formatjs/intl-numberformat" "^5.5.2"
 
 intl-messageformat@^8.3.7:
   version "8.4.1"
