@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_chain_item_chain_items",
+  "info": {
+    "name": "chainItem",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "chainId": {
+      "type": "string",
+      "required": true
+    },
+    "chainsLinkName": {
+      "type": "string",
+      "required": true
+    },
+    "chainsLink": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

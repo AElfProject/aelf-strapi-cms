@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aelf_menus",
+  "info": {
+    "name": "AelfMenu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "local": {
+      "type": "enumeration",
+      "enum": [
+        "zh",
+        "en"
+      ],
+      "required": true
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.main-menu",
+      "required": true
+    }
+  }
+}

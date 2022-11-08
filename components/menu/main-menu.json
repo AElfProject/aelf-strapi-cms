@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_menu_main_menus",
+  "info": {
+    "name": "MainMenu",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "mainTitle": {
+      "type": "string",
+      "required": true
+    },
+    "isUrl": {
+      "type": "boolean",
+      "default": false
+    },
+    "isActivity": {
+      "type": "boolean",
+      "default": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "pageList": {
+      "type": "json"
+    },
+    "subList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.sub-menu"
+    }
+  }
+}

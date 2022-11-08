@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "community_configs",
+  "info": {
+    "name": "CommunityConfig"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "value": {
+      "type": "json"
+    }
+  }
+}

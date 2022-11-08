@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_menu_menu_items",
+  "info": {
+    "name": "MenuItem",
+    "icon": "angle-down"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "page": {
+      "type": "integer"
+    },
+    "activeTimeStart": {
+      "type": "datetime",
+      "required": false
+    },
+    "activeTimeEnd": {
+      "type": "datetime",
+      "required": false
+    }
+  }
+}

@@ -529,7 +529,13 @@
     "schemas": {
       "Hot-news": {
         "required": [
-          "id"
+          "id",
+          "img",
+          "link",
+          "title",
+          "time",
+          "description",
+          "lang"
         ],
         "properties": {
           "id": {
@@ -593,6 +599,12 @@
               },
               "related": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -602,18 +614,32 @@
           "title": {
             "type": "string"
           },
-          "lang": {
-            "type": "string"
-          },
           "open": {
             "type": "boolean"
           },
           "time": {
+            "type": "datetime"
+          },
+          "description": {
             "type": "string"
+          },
+          "lang": {
+            "type": "string",
+            "enum": [
+              "zh",
+              "en"
+            ]
           }
         }
       },
       "NewHot-news": {
+        "required": [
+          "link",
+          "title",
+          "time",
+          "description",
+          "lang"
+        ],
         "properties": {
           "link": {
             "type": "string"
@@ -621,13 +647,26 @@
           "title": {
             "type": "string"
           },
-          "lang": {
-            "type": "string"
-          },
           "open": {
             "type": "boolean"
           },
           "time": {
+            "type": "datetime"
+          },
+          "description": {
+            "type": "string"
+          },
+          "lang": {
+            "type": "string",
+            "enum": [
+              "zh",
+              "en"
+            ]
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }
