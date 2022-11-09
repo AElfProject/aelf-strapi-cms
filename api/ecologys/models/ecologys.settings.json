@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ecologys",
+  "info": {
+    "name": "Ecologys"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "href": {
+      "type": "string"
+    },
+    "tagList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ecology-tag-item.tag-item"
+    },
+    "lang": {
+      "type": "enumeration",
+      "enum": [
+        "zh",
+        "en"
+      ],
+      "default": "en",
+      "required": true
+    }
+  }
+}
