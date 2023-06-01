@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "ecologys",
   "info": {
-    "name": "Ecologys"
+    "name": "Ecosystem"
   },
   "options": {
     "increments": true,
