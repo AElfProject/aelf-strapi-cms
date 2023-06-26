@@ -623,6 +623,10 @@
               "zh",
               "en"
             ]
+          },
+          "order": {
+            "type": "integer",
+            "default": "0"
           }
         }
       },
@@ -664,6 +668,10 @@
               "zh",
               "en"
             ]
+          },
+          "order": {
+            "type": "integer",
+            "default": "0"
           },
           "created_by": {
             "type": "string"
